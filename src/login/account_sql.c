@@ -286,6 +286,7 @@ bool account_db_read_inter(AccountDB_SQL *db, const char *filename, bool importe
 
 	// TODO: Proper import mechanism for this file
 
+	libconfig->destroy(&config);
 	return true;
 }
 
